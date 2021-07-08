@@ -1,0 +1,104 @@
+#ifndef __GAME_DATA_H_
+#define __GAME_DATA_H_
+
+// Game size
+#define COL_LEN 18
+#define ROW_LEN 13
+
+//First Player state
+#define FULL_HEALTH 3
+#define FULL_MANA 10
+#define START_MANA_REFILL_DELAY 3000
+#define START_POWER 1
+#define START_ATT_DELAY 200
+#define START_MOV_DELAY 70
+#define START_X 6
+#define START_Y 17
+#define HIT_DELAY 300
+
+//Maximum number of enemys, bullets, else
+#define MAX_ENEMY_NUM 15
+#define MAX_PLAYER_BULLET_NUM 20
+#define MAX_ENEMY_BULLET_NUM 50
+#define MAX_SKILL_NUM 10
+#define MAX_ENEMY_GRADE 6
+#define MAX_STAGE_LEVEL 10
+#define MAX_POWER_UP_TIME 2
+#define MAX_ATT_DELAY_DOWN_TIME 9
+#define MAX_MOV_DELAY_DOWN_TIME 4
+#define MAX_MANA_DELAY_DOWN_TIME 4
+
+//Delay of Bullet (one movement = delay * 10 milisceond)
+#define PLAYER_BULLET_MOV_DELAY 5
+#define ENEMY_BULLET_MOV_DELAY 15
+
+//Delay of Summon Enemy
+#define FISRT_STAGE_ENEMY_SUMMON_DELAY 1000
+
+//Delay of Up Mana
+#define MANA_UP_DELAY 3000
+
+//Enemy State
+#define ENEMY1_GRADE 1
+#define ENEMY1_HEALTH 1
+#define ENEMY1_ATT_DELAY 0
+#define ENEMY1_MOV_DELAY 50
+#define ENEMY1_MOV_MODE 1
+#define ENEMY1_EXP 1
+
+#define ENEMY2_GRADE 2
+#define ENEMY2_HEALTH 2
+#define ENEMY2_ATT_DELAY 0
+#define ENEMY2_MOV_DELAY 50 
+#define ENEMY2_EXP 2
+
+#define ENEMY3_GRADE 3
+#define ENEMY3_HEALTH 1
+#define ENEMY3_ATT_DELAY 500
+#define ENEMY3_MOV_DELAY 300 
+#define ENEMY3_MOV_MODE 2
+#define ENEMY3_EXP 1
+
+#define ENEMY4_GRADE 4
+#define ENEMY4_HEALTH 2
+#define ENEMY4_ATT_DELAY 500
+#define ENEMY4_MOV_DELAY 300 
+#define ENEMY4_MOV_MODE 2
+#define ENEMY4_EXP 2
+
+#define ENEMY5_GRADE 5
+#define ENEMY5_HEALTH 1
+#define ENEMY5_ATT_DELAY 500
+#define ENEMY5_MOV_DELAY 300 
+#define ENEMY5_MOV_MODE 2
+#define ENEMY5_EXP 3
+
+#define ENEMY6_GRADE 6
+#define ENEMY6_HEALTH 2
+#define ENEMY6_ATT_DELAY 500
+#define ENEMY6_MOV_DELAY 300 
+#define ENEMY6_MOV_MODE 2
+#define ENEMY6_EXP 4
+
+//Skill and Ult Details
+#define USE_SKILL_MANA 1
+#define SKILL_POWER 4
+#define SKILL_MOV_DELAY 10;
+
+
+//Stage Summon Time for Next Stage
+#define STAGE_SUMMON_TIME1 15
+#define STAGE_SUMMON_TIME2 15
+#define STAGE_SUMMON_TIME3 20
+#define STAGE_SUMMON_TIME4 20
+#define STAGE_SUMMON_TIME5 20
+#define STAGE_SUMMON_TIME6 30
+#define STAGE_SUMMON_TIME7 30
+#define STAGE_SUMMON_TIME8 30
+#define STAGE_SUMMON_TIME9 40
+#define STAGE_SUMMON_TIME10 40
+
+enum { PLAYER=1, P_BULLET1, P_BULLET2, P_BULLET3, P_SKILL, P_ULT, E_BULLET, E_METEOR, ENEMY1, ENEMY2, ENEMY3, ENEMY4, ENEMY5, ENEMY6, BLANK };
+
+#endif
+#define ENEMY2_MOV_MODE 1
